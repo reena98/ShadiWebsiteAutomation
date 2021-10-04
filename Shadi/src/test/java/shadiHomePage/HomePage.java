@@ -56,7 +56,7 @@ public class HomePage {
 					driver.findElement(By.xpath("//button[@data-testid=\"next_button\"]")).click();
 					driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 					
-					
+					//Verification of Community and Mother tongue
 					if(websitURL.contains("marathishaadi")) {
 						String Marathi = driver.findElement(By.xpath("//div[text()='Marathi']")).getText();
 						Assert.assertEquals(CommunityName, Marathi);
